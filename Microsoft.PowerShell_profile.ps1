@@ -1,0 +1,1 @@
+Write-Output "🎉🎉 Welcome to MyCLI! This image has PowerShell Core installed, the Terraform CLI (version 1.0.9), Az PowerShell, the PowerShell Secrets Management module, and a few custom modules. Have fun! 🎉🎉"
