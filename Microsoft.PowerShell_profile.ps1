@@ -1,1 +1,5 @@
-Write-Output "🎉🎉 Welcome to MyCLI! This image has PowerShell Core installed, the Terraform CLI (version 1.0.9), Az PowerShell, the PowerShell Secrets Management module, and a few custom modules. Have fun! 🎉🎉"
+Write-Output "🎉🎉🎉 Welcome to MyCLI! This image has the following utilities installed and configured: 🎉🎉🎉"
+Write-Output "📜 The PowerShell Secrets Management module, and a few custom PS modules"
+Write-Output "☁️ Azure CLI and Az PowerShell"
+Write-Output "🌍 Terraform CLI"
+Write-Output "🎉🎉🎉 Have fun! 🎉🎉🎉"
