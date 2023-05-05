@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install sudo ca-certificates curl apt-transport-ht
 RUN sudo mkdir -p /etc/apt/keyrings && curl -sLS https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/microsoft.gpg > /dev/null && sudo chmod go+r /etc/apt/keyrings/microsoft.gpg
 RUN AZ_REPO=$(lsb_release -cs) && echo "deb [arch=`dpkg --print-architecture` signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" | sudo tee /etc/apt/sources.list.d/azure-cli.list
 RUN sudo apt-get update && sudo apt-get install azure-cli
+### Install network debugging tools:
+RUN sudo apt-get install dnsutils iputils-ping curl wget -y
 
 ##### Setup powershell:
 SHELL ["pwsh", "-Command"]

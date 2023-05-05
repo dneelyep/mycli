@@ -2,4 +2,5 @@ Write-Output "🎉🎉🎉 Welcome to MyCLI! This image has the following utilit
 Write-Output "📜 The PowerShell Secrets Management module, and a few custom PS modules"
 Write-Output "☁️ Azure CLI and Az PowerShell"
 Write-Output "🌍 Terraform CLI"
+Write-Output "💻 Network debugging utilities (ping, nslookup, dig, curl, wget)"
 Write-Output "🎉🎉🎉 Have fun! 🎉🎉🎉"
