@@ -24,4 +24,14 @@ jobs:
       #- name: Download Docker image
       #  run: "docker pull dneelyep/my-cli:latest"
       - name: Run test command
-        run: Write-Output "Hello, world!"
+        run: |
+          Write-Output "♦️ Demoing custom PowerShell module..."
+          List-Processes
+          Write-Output "♦️ Demoing Az PowerShell..."
+          Get-AzSubscription
+          Write-Output "♦️ Demoing PowerShell Secrets Management..."
+          Get-SecretInfo
+          Write-Output "♦️ Demoing curl..."
+          curl https://google.com
+          Write-Output "♦️ Demoing terraform CLI..."
+          terraform version
