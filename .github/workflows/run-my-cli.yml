@@ -27,8 +27,6 @@ jobs:
         run: |
           Write-Output "♦️ Demoing custom PowerShell module..."
           List-Processes
-          Write-Output "♦️ Demoing Az PowerShell..."
-          Get-AzSubscription
           Write-Output "♦️ Demoing PowerShell Secrets Management..."
           Get-SecretInfo
           Write-Output "♦️ Demoing curl..."
