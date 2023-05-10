@@ -27,9 +27,9 @@ jobs:
         run: |
           Write-Output "♦️ Demoing custom PowerShell module..."
           List-Processes
-          Write-Output "♦️ Demoing PowerShell Secrets Management..."
-          Get-SecretInfo
           Write-Output "♦️ Demoing curl..."
           curl https://google.com
           Write-Output "♦️ Demoing terraform CLI..."
           terraform version
+          Write-Output "♦️ Demoing PowerShell Secrets Management..."
+          Get-SecretInfo
