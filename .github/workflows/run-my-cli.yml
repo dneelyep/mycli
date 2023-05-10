@@ -6,6 +6,9 @@ jobs:
   push_to_registry:
     name: Execute MyCLI Docker image from Docker Hub
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: pwsh
     container:
       image: dneelyep/my-cli:latest
     steps:
