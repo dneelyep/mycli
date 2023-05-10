@@ -14,16 +14,7 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-      
-      #- name: Log in to Docker Hub
-      #  uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
-      #  with:
-      #    username: ${{ secrets.DOCKERHUB_USERNAME }}
-      #    password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
-      #- name: Download Docker image
-      #  run: "docker pull dneelyep/my-cli:latest"
-      - name: Run test command
+      - name: Demo image functionality
         run: |
           Write-Output "♦️ Demoing custom PowerShell module..."
           List-Processes
@@ -31,5 +22,3 @@ jobs:
           curl https://google.com
           Write-Output "♦️ Demoing terraform CLI..."
           terraform version
-          Write-Output "♦️ Demoing PowerShell Secrets Management..."
-          Get-SecretInfo
