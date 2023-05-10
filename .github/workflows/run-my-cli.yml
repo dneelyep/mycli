@@ -20,8 +20,5 @@ jobs:
           
       #- name: Download Docker image
       #  run: "docker pull dneelyep/my-cli:latest"
-
-      - name: Run Docker image
-        run: "docker run dneelyep/my-cli:latest"
-
-      
+      - name: Run test command
+        run: List-Processes
