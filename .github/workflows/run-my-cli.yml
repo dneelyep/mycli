@@ -21,4 +21,4 @@ jobs:
       #- name: Download Docker image
       #  run: "docker pull dneelyep/my-cli:latest"
       - name: Run test command
-        run: -Command { Write-Output "Hello, world!" }
+        run: Write-Output "Hello, world!"
